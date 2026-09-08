@@ -21,11 +21,15 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 body {
   background: #141212;
   font-family: "NeueHaasDisplay", Arial, sans-serif;
+  overflow-x: clip;
+  overflow-y: visible;
 }
 
 ::selection {
@@ -147,6 +151,6 @@ body {
   .slide-in-left {
     animation: slideInLeftScroll linear both;
     animation-timeline: view();
-    animation-range: entry 10% cover 30%;
+    animation-range: entry 0% entry 60%;
   }
 }
